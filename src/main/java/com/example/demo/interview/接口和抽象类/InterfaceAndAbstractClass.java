@@ -10,7 +10,7 @@ public class InterfaceAndAbstractClass {
      */
     abstract class AbstractClass{
         /**
-         * 被子类所继承 子类实现area来计算面积
+         * 被子类所继承 子类实现area来计算面积 返回值 double
          * @return
          */
         abstract public double area();
