@@ -27,10 +27,12 @@ public class ListAndSet {
      *---| Iterable      接口 实现该接口可以使用增强for循环
      *                 ---| Collection        描述所有集合共性的接口
      *                     ---| List接口        可以有重复元素的集合
-     *                             ---| ArrayList
+     *                             ---|  ArrayList
      *                             ---|  LinkedList
      *                     ---| Set接口        不可以有重复元素的集合
      *                             ---| HashSet  线程不安全，存取速度快。底层是以哈希表实现的。
+     *                 ---| Map        key value 键值对 Map接口中键和值一一映射. 可以通过键来获取值。
+     *
      */
     static void showSet(){
         Set hs = new HashSet();
