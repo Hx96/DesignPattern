@@ -5,6 +5,6 @@ package com.example.demo.pattern.observer;
  * @author 35762
  */
 public abstract class Observer {
-  protected Subject subject;
+  protected AbstractSubject subject;
   public abstract void update();
 }

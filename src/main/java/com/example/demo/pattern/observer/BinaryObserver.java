@@ -1,7 +1,7 @@
 package com.example.demo.pattern.observer;
 
 public class BinaryObserver extends Observer{
-  public BinaryObserver(Subject subject) {
+  public BinaryObserver(AbstractSubject subject) {
     this.subject = subject;
     this.subject.attach(this);
   }
@@ -12,6 +12,6 @@ public class BinaryObserver extends Observer{
   @Override
   public void update() {
     System.out.println("Binary String: "
-    + Integer.toBinaryString(subject.getState()));
+    + Integer.toBinaryString((Integer) subject.getState()));
   }
 }

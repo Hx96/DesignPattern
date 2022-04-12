@@ -10,26 +10,16 @@ import java.util.List;
  *
  * @author 35762
  */
-@Data
-public class Subject {
+public class Subject extends AbstractSubject <Integer> {
 
-  private List<Observer> observers
-    = new ArrayList<>();
-  private int state;
+  private Integer state;
 
-  public void setState(int state){
+  public void setState(Integer state){
     this.state = state;
     notifyAllObservers();
   }
 
-  public void attach(Observer observer) {
-    observers.add(observer);
+  public Integer getState() {
+    return state;
   }
-
-  public void notifyAllObservers(){
-    for (Observer observer : observers) {
-      observer.update();
-    }
-  }
-
 }
